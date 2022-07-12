@@ -6,7 +6,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/index", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "hello , go first ",
+			"message": "hello world, go first ",
 		})
 	})
 
