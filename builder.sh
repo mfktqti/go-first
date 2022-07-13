@@ -10,7 +10,7 @@ cat ./go.mod
 # linux环境编译
 CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main
 # 构建docker镜像，项目中需要在当前目录下有dockerfile，否则构建失败
-sudo docker build -t go-first .
+docker build -t go-first .
 rm -rf main
-sudo docker rm go-first-test -f
-sudo docker run --name go-first-test -p 8010:8010 -d go-first
+docker rm go-first-test -f
+docker run --name go-first-test -p 8010:8010 -d go-first
