@@ -10,7 +10,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/index", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"message": "qiozu hello world " + time.Now().Format(time.RFC3339),
+			"message": "qiozu,qiozu hello world " + time.Now().Format(time.RFC3339),
 		})
 	})
 
